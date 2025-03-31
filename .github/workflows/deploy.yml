@@ -4,16 +4,22 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: windows-latest
+
     steps:
       - uses: actions/checkout@v3
 
+      - name: Use Node.js 14 (compat for PAC CLI)
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
       - name: Install Power Platform CLI
-        run: |
-          npm install -g pac
+        run: npm install -g pac
 
       - name: Authenticate with Power Platform
         run: |
