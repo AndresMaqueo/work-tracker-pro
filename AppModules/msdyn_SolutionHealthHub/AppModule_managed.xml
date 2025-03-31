@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>msdyn_SolutionHealthHub</UniqueName>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <WebResourceId>3332d626-1c9f-e811-a966-000d3a1c5ec5</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <WelcomePageId>9b681435-2844-ef11-bfe2-000d3a5b28dc</WelcomePageId>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents />
+  <LocalizedNames>
+    <LocalizedName description="Centro de estado de la solución" languagecode="3082" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="El Centro de estado de la solución permite validar mediante reglas el estado de su organización y sus componentes. Los desarrolladores e implementadores de soluciones pueden crear reglas que permitan a los administradores evitar o diagnosticar posibles problemas y fomentar el buen estado de la organización y sus componentes. Los administradores pueden ejecutar periódicamente las reglas definidas y como un primer paso para la solución de problemas a fin de detectar posibles problemas, ayudar a evitar dificultades y proteger las operaciones de su organización." languagecode="3082" />
+  </Descriptions>
+</AppModule>

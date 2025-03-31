@@ -1,0 +1,230 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_sharepointonline": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr49f_SharePoint_p48fx"
+        },
+        "api": {
+          "name": "shared_sharepointonline"
+        }
+      },
+      "shared_office365_2": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedoffice365_afacf"
+        },
+        "api": {
+          "name": "shared_office365"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "Recurrence": {
+          "recurrence": {
+            "frequency": "Day",
+            "interval": 1,
+            "timeZone": "Pacific Standard Time",
+            "schedule": {
+              "hours": [
+                "9"
+              ]
+            }
+          },
+          "metadata": {
+            "operationMetadataId": "bd5b85fa-8fd7-49d0-896f-e0176321de67"
+          },
+          "type": "Recurrence"
+        }
+      },
+      "actions": {
+        "Days_to_remind_me_in": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "091b7975-fe1d-4892-b00c-a2828b435d9d"
+          },
+          "type": "Compose",
+          "inputs": 3
+        },
+        "Scope_to_get_items_due_in_x_days": {
+          "actions": {
+            "Today_+_x_days": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "0799a635-612f-4f52-8d9b-d8fdbf922ea4"
+              },
+              "type": "Compose",
+              "inputs": "@addDays(utcnow(), int(outputs('Days_to_remind_me_in')), 'yyyy-MM-dd')"
+            },
+            "x_Days_+_1": {
+              "runAfter": {
+                "Today_+_x_days": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "6ea3fc88-cc89-4501-8ff5-810b1cc79a29"
+              },
+              "type": "Compose",
+              "inputs": "@addDays(outputs('Today_+_x_days'),1,'yyyy-MM-dd')"
+            },
+            "Get_list_items": {
+              "runAfter": {
+                "Parse_list_name": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "flowSystemMetadata": {
+                  "swaggerOperationId": "GetItems"
+                },
+                "operationMetadataId": "ca0d8e8b-f046-4e5c-ae75-ce4119d6be04"
+              },
+              "type": "ApiConnection",
+              "inputs": {
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['shared_sharepointonline']['connectionId']"
+                  }
+                },
+                "method": "get",
+                "path": "/datasets/@{encodeURIComponent(encodeURIComponent('https://netorgft17771797.sharepoint.com'))}/tables/@{encodeURIComponent(encodeURIComponent('081bf5f3-48bd-415a-91f5-fd0e80f20d06'))}/items",
+                "queries": {
+                  "$filter": "@{concat(concat('DueDate',' ge ', '''',outputs('Today_+_x_days')),'''',' and ', concat('DueDate',' lt ','''', outputs('x_Days_+_1'),''''))}"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Get_list_name_by_HTTP_request": {
+              "runAfter": {
+                "x_Days_+_1": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "flowSystemMetadata": {
+                  "swaggerOperationId": "HttpRequest"
+                },
+                "operationMetadataId": "90a1a443-d33b-41fa-8d2e-23afbebd32c4"
+              },
+              "type": "ApiConnection",
+              "inputs": {
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['shared_sharepointonline']['connectionId']"
+                  }
+                },
+                "method": "post",
+                "body": {
+                  "method": "GET",
+                  "uri": "_api/web/lists/getById('081bf5f3-48bd-415a-91f5-fd0e80f20d06')?$select=Title",
+                  "headers": {
+                    "Accept": "application/json;odata=nometadata"
+                  }
+                },
+                "path": "/datasets/@{encodeURIComponent(encodeURIComponent('https://netorgft17771797.sharepoint.com/sites/Innovafinace'))}/httprequest",
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Parse_list_name": {
+              "runAfter": {
+                "Get_list_name_by_HTTP_request": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "af88da26-2e63-4c34-b4cd-227513b8d6ba"
+              },
+              "type": "Compose",
+              "inputs": "@body('Get_list_name_by_HTTP_request')['Title']"
+            },
+            "Check_if_list_is_empty": {
+              "actions": {},
+              "runAfter": {
+                "Get_list_items": [
+                  "Succeeded"
+                ]
+              },
+              "else": {
+                "actions": {
+                  "Apply_to_each": {
+                    "foreach": "@body('Get_list_items')?['value']",
+                    "actions": {
+                      "Send_work_item_owner_a_reminder_email": {
+                        "runAfter": {},
+                        "metadata": {
+                          "flowSystemMetadata": {
+                            "swaggerOperationId": "SendEmailV2"
+                          },
+                          "operationMetadataId": "d05ba662-2a45-4800-8e16-1527ba78bbda"
+                        },
+                        "type": "ApiConnection",
+                        "inputs": {
+                          "host": {
+                            "connection": {
+                              "name": "@parameters('$connections')['shared_office365_2']['connectionId']"
+                            }
+                          },
+                          "method": "post",
+                          "body": {
+                            "To": "@items('Apply_to_each')?['AssignedTo0']?['Email']",
+                            "Subject": "The \"@{items('Apply_to_each')?['{Name}']}\" work item is due in @{outputs('Days_to_remind_me_in')} day(s)",
+                            "Body": "<p>Hello @{items('Apply_to_each')?['AssignedTo0']?['DisplayName']},<br>\n<br>\nThe \"@{items('Apply_to_each')?['{Name}']}\" work item in the \"@{outputs('Parse_list_name')}\" list is due in @{outputs('Days_to_remind_me_in')} day(s) on @{items('Apply_to_each')?['DueDate']}. Please review the work item: <a href=\"@{items('Apply_to_each')?['{Link}']}\">Link to item</a>.</p>",
+                            "Importance": "High"
+                          },
+                          "path": "/v2/Mail",
+                          "authentication": "@parameters('$authentication')"
+                        }
+                      }
+                    },
+                    "runAfter": {},
+                    "metadata": {
+                      "operationMetadataId": "4402f6bb-9760-4c88-b32b-0c075bdffabc"
+                    },
+                    "type": "Foreach"
+                  }
+                }
+              },
+              "expression": {
+                "equals": [
+                  "@empty(body('Get_list_items')?['value'])",
+                  true
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "eb9818a9-8130-4ccf-99ae-f3c86efb48d2"
+              },
+              "type": "If"
+            }
+          },
+          "runAfter": {
+            "Days_to_remind_me_in": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "5c3473df-aeca-4ddc-ba60-b1194d6f77bc"
+          },
+          "type": "Scope"
+        }
+      },
+      "outputs": {}
+    },
+    "templateName": "SolutionTemplate-Work_progress_tracker_p48fx"
+  },
+  "schemaVersion": "1.0.0.0"
+}

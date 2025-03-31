@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25023.200" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25024.00216">
+  <Entities />
+  <Roles />
+  <Workflows />
+  <FieldSecurityProfiles />
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls />
+  <AppModules />
+  <EntityDataProviders />
+  <connectionreferences>
+    <connectionreference connectionreferencelogicalname="cr49f_Office365Outlook_p48fx">
+      <connectionreferencedisplayname>081bf5f3-48bd-415a-91f5-fd0e80f20d06 - Office 365 Outlook</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_office365</connectorid>
+      <description>solucionando errores de permisos y ajustando las configuraciones necesarias </description>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="cr49f_SharePoint_p48fx">
+      <connectionreferencedisplayname>081bf5f3-48bd-415a-91f5-fd0e80f20d06 - SharePoint</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_sharepointonline</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+  </connectionreferences>
+  <msdyn_pmanalysishistories>
+    <msdyn_pmanalysishistory msdyn_pmanalysishistoryid="01306d19-cdff-ef11-bae2-6045bd00ab22">
+      <iscustomizable>1</iscustomizable>
+      <msdyn_analysisresult>0</msdyn_analysisresult>
+      <msdyn_analysistype>0</msdyn_analysistype>
+      <msdyn_parenttask>
+        <msdyn_pminferredtaskid>d02d00e2-ccff-ef11-bae2-6045bd00ab22</msdyn_pminferredtaskid>
+      </msdyn_parenttask>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </msdyn_pmanalysishistory>
+  </msdyn_pmanalysishistories>
+  <msdyn_pminferredtasks>
+    <msdyn_pminferredtask msdyn_pminferredtaskid="d02d00e2-ccff-ef11-bae2-6045bd00ab22">
+      <iscustomizable>1</iscustomizable>
+      <msdyn_automationstatus>200000000</msdyn_automationstatus>
+      <msdyn_inputdatabinding>{"DisplayPath":"ProcessInsights-d02d00e2-ccff-ef11-bae2-6045bd00ab22-56be3985-cd10-469d-9f10-ec2dbf41585b","ProductFlavor":"processadvisor","DataSource":{"DataSourceId":"bc5b8c5f-fb5c-4f26-a6b6-b26c58abc5d3","DataSourceType":0,"CreateOrLastUpdate":"2025-03-13T05:35:08.579Z","DataSourceInfoProperties":{"flowId":"00b0df82-0be7-4ae5-bc12-f980d9748b26","disableEditing":true,"templateId":"726f1606-7e43-49b8-8e88-fa14654e917b","reportId":"49b1bf8f-2f84-4009-b382-1b1642ba61f2","customReports":[{"templateId":"726f1606-7e43-49b8-8e88-fa14654e917b","customReportDetails":[{"reportId":"49b1bf8f-2f84-4009-b382-1b1642ba61f2","reportName":"Cloud Flow Report","pbixFileName":"CLOUDFLOW","version":"1.0","description":"This is the cloud flow Report for cloud flow template.","defaultReportConfig":"true"},{"reportId":"d73f290c-3840-4179-b9a0-3168c091867b","reportName":"Standard Report","pbixFileName":"PIPROCESS","version":"1.0","description":"This is the standard Report for every template.","defaultReportConfig":"false"}]}]}},"MiningMetadata":{"ImportConfiguration":{"Attributes":[{"Name":"CaseId","SourceDataType":"String","ImportType":"Case","FinanceImportType":"None","Level":"Case","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":"","CaseLevelAttributeHandling":"LastEvent"},{"Name":"ActivityName","SourceDataType":"String","ImportType":"Activity","FinanceImportType":"None","Level":"Event","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":"","CaseLevelAttributeHandling":"None"},{"Name":"StartTimestamp","SourceDataType":"Date","ImportType":"Start","FinanceImportType":"None","Level":"Event","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":"","CaseLevelAttributeHandling":"None"},{"Name":"FlowVersionId","SourceDataType":"String","ImportType":"Other","FinanceImportType":"None","Level":"Case","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":"","CaseLevelAttributeHandling":"LastEvent"},{"Name":"ActionStatus","SourceDataType":"String","ImportType":"Other","FinanceImportType":"None","Level":"Event","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":"","CaseLevelAttributeHandling":"None"},{"Name":"ActionStatusCode","SourceDataType":"String","ImportType":"Other","FinanceImportType":"None","Level":"Event","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":"","CaseLevelAttributeHandling":"None"},{"Name":"ActionError","SourceDataType":"String","ImportType":"Other","FinanceImportType":"None","Level":"Event","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":"","CaseLevelAttributeHandling":"None"},{"Name":"ActionId","SourceDataType":"String","ImportType":"Other","FinanceImportType":"None","Level":"Event","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":"","CaseLevelAttributeHandling":"None"},{"Name":"ConnectorId","SourceDataType":"String","ImportType":"Other","FinanceImportType":"None","Level":"Event","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":"","CaseLevelAttributeHandling":"None"},{"Name":"StartTimestamp.millisecondsEpoch","SourceDataType":"Integer","ImportType":"Other","FinanceImportType":"None","Level":"Event","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":"","CaseLevelAttributeHandling":"None"}]},"Views":[{"Name":"Default","Filters":[]}],"ProcessExtendedMetadata":{"CalculatedMetrics":[],"BusinessRules":[],"ProcessMapHierarchies":[],"CaseCategorization":{"CaseStates":[],"CaseAnnotations":[]}},"ReportData":{},"Calendars":[],"LastModifiedTime":"2025-03-13T05:34:50.278Z"}}</msdyn_inputdatabinding>
+      <msdyn_iterationid>cefde7eca38c4bbdaed1e5c090e2fe2e-638774409155601057</msdyn_iterationid>
+      <msdyn_name>Extraer texto de imágenes o documentos PDF mediante el Reconocimiento de texto de AI Builder Process</msdyn_name>
+      <msdyn_source>1</msdyn_source>
+      <statecode>2</statecode>
+      <statuscode>4</statuscode>
+      <timezoneruleversionnumber>4</timezoneruleversionnumber>
+      <msdyn_pmprocesstemplates>
+        <msdyn_pmprocesstemplate msdyn_pmprocesstemplateid="e4e930d2-54f4-4159-87d0-f7555a0d6a5d">
+          <iscustomizable>1</iscustomizable>
+          <msdyn_name>Extraer texto de imágenes o documentos PDF mediante el Reconocimiento de texto de AI Builder Process</msdyn_name>
+          <msdyn_processdataflowconfig>{"locale":"en-US","anonymousConnection":true,"connectionType":"Blank","baseUrl":"","connectionOverrides":[],"queryMetadata":[{"queryId":"8ef680e0-865f-4b07-971b-a90a87ae0dc3","queryName":"Query","queryGroupId":null,"entityName":null,"lastKnownIsCalculatedEntity":null,"lastKnownIsLinkedEntity":null,"lastKnownIsParameter":null,"isHidden":null,"lastKnownResultTypeName":null,"loadEnabled":true,"fieldsMetadata":{},"deleteExistingDataOnLoad":false,"hostProperties":null,"jsonOutputDestinations":null,"bindToDefaultOutputDestination":null,"jsonIncrementalRefreshSettings":null,"stagingDefinition":null}],"allowNativeQueries":false,"flavorScope":["processadvisor"]}</msdyn_processdataflowconfig>
+          <msdyn_processmashupscript>section Section1;
+shared Query = let
+    FlowRunData = "H4sIAAAAAAAAA12OsU4DMQyGdyRe4uYWOUmTy1ViqqjEglApHVhObuJWkXrxKUkB8fSkBwKB5cGf/dv+M423s+urJhdMZRsGamYNuhI4PuAEhxO/bc7x3n/XO0q5Tif+Ej4VLOf8D1fsf0/dpcTph6ZVxzGSK5wq1fcSpJ6DmkO3BbUEsdT2RmvVQmteqnpDjo8xfFBf6L30IfYY+zDg8fIDrLYLA0K02rQCjO2U7YzSQgDI1bNQ8FfUtULWWJjaXmM40cXPmtM+eE+x1jUfE/ngyk5OVoeBo8eCmdJrcHTghOOYq+9PPA3laz4BAAA=",
+    Source =
+      Csv.Document(
+        Binary.Decompress(
+          Binary.FromText(FlowRunData, BinaryEncoding.Base64),
+          Compression.GZip
+        ),
+        [
+          Delimiter = ",",
+          Columns = 9,
+          Encoding = 65001,
+          QuoteStyle = QuoteStyle.None
+        ]
+      ),
+    #"Changed column type" =
+      Table.TransformColumnTypes(
+        Source, {
+          {"Column1", type text},
+          {"Column2", type text},
+          {"Column3", type text},
+          {"Column4", type text},
+          {"Column5", type text},
+          {"Column6", type text},
+          {"Column7", type text},
+          {"Column8", type text},
+          {"Column9", type text}
+        }
+      ),
+    #"Removed top rows" =
+      Table.Skip(#"Changed column type", 1),
+    #"Promoted headers" =
+      Table.PromoteHeaders(#"Removed top rows", [PromoteAllScalars = true]),
+    #"Changed column type 1" =
+      Table.TransformColumnTypes(
+        #"Promoted headers", {
+          {"startTime", type datetime},
+          {"actionName", type text},
+          {"flowRunId", type text},
+          {"flowVersionId", Int64.Type},
+          {"actionStatus", type text},
+          {"actionStatusCode", type text},
+          {"actionError", type text},
+          {"actionId", type text},
+          {"connectorId", type text}
+        }
+      ),
+    #"Mapped to CDM" =
+      Cdm.MapToEntity(
+        #"Changed column type 1", {
+          {"startTimestamp", "startTime", type datetime},
+          {"activityName", "actionName", type text},
+          {"caseId", "flowRunId", type text},
+          {"flowVersionId", "flowVersionId"},
+          {"actionStatus", "actionStatus"},
+          {"actionStatusCode", "actionStatusCode"},
+          {"actionError", "actionError"},
+          {"actionId", "actionId"},
+          {"connectorId", "connectorId"}
+        },
+        null,
+        "Event log"
+      ),
+    #"Temp flowVersion table" =
+      Table.Sort(
+        Table.Buffer(
+          Table.SelectColumns(
+            #"Mapped to CDM",
+            {"startTimestamp", "flowVersionId"}
+          )
+        ),
+        {"startTimestamp"}
+      ),
+    #"Distinct flowVersionDate" =
+      Table.Distinct(
+        Table.RemoveColumns(
+          Table.AddColumn(
+            #"Temp flowVersion table",
+            "flowVersionDate",
+            each DateTime.ToText([startTimestamp], "MM/dd/yyyy")
+          ),
+          "startTimestamp"
+        ),
+        "flowVersionId"
+      ),
+    #"Expand flowVersion index" =
+      Table.ExpandTableColumn(
+        Table.AddColumn(
+          Table.Group(
+            #"Distinct flowVersionDate",
+            "flowVersionDate",
+            {{"GroupedData", each _, type table [ColumnToGroupBy=type, OtherColumns=type]}}
+          ),
+          "Index",
+          each Table.AddIndexColumn([GroupedData], "Index", 1, 1)
+        ),
+        "Index",
+        {"Index"},
+        {"flowVersionIndex"}
+      ),
+    #"Merged flowVersion columns" =
+      Table.RemoveColumns(
+        Table.CombineColumns(
+          Table.TransformColumnTypes(
+            #"Expand flowVersion index",
+            {{"flowVersionDate", type text},
+            {"flowVersionIndex", type text}}
+          ),
+          {"flowVersionDate", "flowVersionIndex"},
+          Combiner.CombineTextByDelimiter("-", QuoteStyle.None),
+          "mergedFlowVersion"
+        ),
+        {"GroupedData"}
+      ),
+    #"Combined flowVersion columns" =
+      Table.ReplaceValue(
+        Table.RemoveColumns(
+          Table.Join(
+            Table.AddIndexColumn(#"Distinct flowVersionDate", "Index", 1, 1),
+            "Index",
+            Table.AddIndexColumn(#"Merged flowVersion columns", "Index", 1, 1),
+            "Index"
+          ),
+          {"Index", "flowVersionDate"}
+        ),
+        "-1",
+        "",
+        Replacer.ReplaceText,
+        {"mergedFlowVersion"}
+      ),
+    #"Join flowVersionDate" =
+      Table.RenameColumns(
+        Table.RemoveColumns(
+          Table.Join(
+            #"Mapped to CDM",
+            "flowVersionId",
+            #"Combined flowVersion columns",
+            "flowVersionId"
+          ),
+          {"flowVersionId"}
+        ),
+        {"mergedFlowVersion", "flowVersionId"}
+      ),
+    #"Add startTimestampEpoch" =
+      Table.TransformColumnTypes(
+        Table.AddColumn(
+          #"Join flowVersionDate",
+          "startTimestamp.millisecondsEpoch",
+          each Duration.TotalSeconds(
+            DateTimeZone.From([startTimestamp]) - #datetimezone(1970, 1, 1, 0, 0, 0, 0, 0)
+          ) * 1000
+        ),
+        {{"startTimestamp.millisecondsEpoch", Int64.Type}}
+      ),
+    #"Replaced value" = Table.ReplaceValue(#"Add startTimestampEpoch", "", " ", Replacer.ReplaceValue, {"actionStatusCode", "actionError", "actionId", "connectorId"})
+  in
+    #"Replaced value";
+</msdyn_processmashupscript>
+          <msdyn_processminingmetadataconfig>{"ImportConfiguration":{"Attributes":[{"Name":"CaseId","SourceDataType":"String","ImportType":"Case","FinanceImportType":"None","Conversion":null,"Level":"Case","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":{"ValueKind":"String"}},{"Name":"ActivityName","SourceDataType":"String","ImportType":"Activity","FinanceImportType":"None","Conversion":null,"Level":"Event","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":{"ValueKind":"String"}},{"Name":"StartTimestamp","SourceDataType":"Date","ImportType":"Start","FinanceImportType":"None","Conversion":null,"Level":"Event","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":{"ValueKind":"String"}},{"Name":"FlowVersionId","SourceDataType":"String","ImportType":"Other","FinanceImportType":"None","Conversion":null,"Level":"Case","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":{"ValueKind":"String"}},{"Name":"ActionStatus","SourceDataType":"String","ImportType":"Other","FinanceImportType":"None","Conversion":null,"Level":"Event","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":{"ValueKind":"String"}},{"Name":"ActionStatusCode","SourceDataType":"String","ImportType":"Other","FinanceImportType":"None","Conversion":null,"Level":"Event","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":{"ValueKind":"String"}},{"Name":"ActionError","SourceDataType":"String","ImportType":"Other","FinanceImportType":"None","Conversion":null,"Level":"Event","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":{"ValueKind":"String"}},{"Name":"ActionId","SourceDataType":"String","ImportType":"Other","FinanceImportType":"None","Conversion":null,"Level":"Event","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":{"ValueKind":"String"}},{"Name":"ConnectorId","SourceDataType":"String","ImportType":"Other","FinanceImportType":"None","Conversion":null,"Level":"Event","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":{"ValueKind":"String"}},{"Name":"StartTimestamp.millisecondsEpoch","SourceDataType":"Integer","ImportType":"Other","FinanceImportType":"None","Conversion":null,"Level":"Event","IsDisplayAttribute":false,"IsExcluded":false,"DefaultValue":{"ValueKind":"String"}}]},"Views":[{"Name":"Default","Calendar":null,"Filters":null}],"ProcessExtendedMetadata":{"CalculatedMetrics":[],"BusinessRules":[],"ProcessMapHierarchies":[],"CaseCategorization":null},"ReportData":null,"Calendars":null,"LastModifiedTime":"2025-03-13T05:35:55.957766Z"}</msdyn_processminingmetadataconfig>
+          <statecode>0</statecode>
+          <statuscode>1</statuscode>
+        </msdyn_pmprocesstemplate>
+      </msdyn_pmprocesstemplates>
+    </msdyn_pminferredtask>
+  </msdyn_pminferredtasks>
+  <msdyn_pmprocessextendedmetadataversions>
+    <msdyn_pmprocessextendedmetadataversion msdyn_pmprocessextendedmetadataversionid="4cea37d8-b114-4c9b-8703-15cdf6160783">
+      <iscustomizable>1</iscustomizable>
+      <msdyn_configuration>{"Version":0,"CalculatedMetrics":[],"ProcessAttributesMetadata":[{"Id":"50d3529a-f771-4886-8c8a-18448e7729bc","Index":0,"IsDisplayAttribute":false,"IsIncrementalTimeStampAttribute":false,"FinanceType":0,"CaseLevelAttributeHandling":1},{"Id":"7eb0e913-83c2-4585-a4e9-bc2db9755235","Index":1,"IsDisplayAttribute":false,"IsIncrementalTimeStampAttribute":false,"FinanceType":0,"CaseLevelAttributeHandling":1},{"Id":"ec7e10f2-44a5-45f3-a1f6-a30bd8c5d6a7","Index":2,"IsDisplayAttribute":false,"IsIncrementalTimeStampAttribute":false,"FinanceType":0,"CaseLevelAttributeHandling":1},{"Id":"027a1aa8-3c6c-4bd9-bfbb-3b9ddcb57fe2","Index":3,"IsDisplayAttribute":false,"IsIncrementalTimeStampAttribute":false,"FinanceType":0,"CaseLevelAttributeHandling":1},{"Id":"79261d99-6478-4945-9222-5815804a1a85","Index":4,"IsDisplayAttribute":false,"IsIncrementalTimeStampAttribute":false,"FinanceType":0,"CaseLevelAttributeHandling":1},{"Id":"02e53bee-602d-4e56-94cd-495331afe2a0","Index":5,"IsDisplayAttribute":false,"IsIncrementalTimeStampAttribute":false,"FinanceType":0,"CaseLevelAttributeHandling":1},{"Id":"357a0e3f-0365-4865-9ceb-8bc52ed30195","Index":6,"IsDisplayAttribute":false,"IsIncrementalTimeStampAttribute":false,"FinanceType":0,"CaseLevelAttributeHandling":1},{"Id":"f6cefd63-1e7c-4bee-9301-718de785dba7","Index":7,"IsDisplayAttribute":false,"IsIncrementalTimeStampAttribute":false,"FinanceType":0,"CaseLevelAttributeHandling":1},{"Id":"e70fafdd-b348-4722-91b4-a09f4a8987c7","Index":8,"IsDisplayAttribute":false,"IsIncrementalTimeStampAttribute":false,"FinanceType":0,"CaseLevelAttributeHandling":1}],"ProcessMapHierarchies":[],"BusinessRules":[],"CaseCategorization":null}</msdyn_configuration>
+      <msdyn_pmprocessversionid>
+        <msdyn_pmprocessversionid>e17d9d54-c01c-4af9-bac6-bbe8885e2e0f</msdyn_pmprocessversionid>
+      </msdyn_pmprocessversionid>
+      <msdyn_version>1</msdyn_version>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </msdyn_pmprocessextendedmetadataversion>
+  </msdyn_pmprocessextendedmetadataversions>
+  <msdyn_pmprocessusersettings>
+    <msdyn_pmprocessusersettings msdyn_pmprocessusersettingsid="d32d00e2-ccff-ef11-bae2-6045bd00ab22">
+      <iscustomizable>1</iscustomizable>
+      <msdyn_parenttask>
+        <msdyn_pminferredtaskid>d02d00e2-ccff-ef11-bae2-6045bd00ab22</msdyn_pminferredtaskid>
+      </msdyn_parenttask>
+      <msdyn_sendanalyticsemails>1</msdyn_sendanalyticsemails>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </msdyn_pmprocessusersettings>
+    <msdyn_pmprocessusersettings msdyn_pmprocessusersettingsid="d86e229f-aeeb-ef11-9342-000d3a331c49">
+      <iscustomizable>1</iscustomizable>
+      <msdyn_parenttask>
+        <msdyn_pminferredtaskid>d56e229f-aeeb-ef11-9342-000d3a331c49</msdyn_pminferredtaskid>
+      </msdyn_parenttask>
+      <msdyn_sendanalyticsemails>1</msdyn_sendanalyticsemails>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </msdyn_pmprocessusersettings>
+  </msdyn_pmprocessusersettings>
+  <msdyn_pmprocessversions>
+    <msdyn_pmprocessversion msdyn_pmprocessversionid="e17d9d54-c01c-4af9-bac6-bbe8885e2e0f">
+      <iscustomizable>1</iscustomizable>
+      <msdyn_configuration>{"Version":0,"DataSourceConfiguration":{"TypeDiscriminator":"CsvDataSource","Delimiter":",","Qualifier":"\u0022","HasHeader":false,"FileName":"","EncodingCodePage":0,"Type":0},"ImportAttributes":[{"Name":"activityName","SourceName":"activityName","SourceDataType":0,"ImportType":1,"FinanceImportType":0,"Conversion":null,"Level":0,"CaseLevelAttributeHandling":1,"IsDisplayAttribute":false,"IsIncrementalTimeStamp":false,"IsExcluded":false,"DefaultValue":"","VersionAreaId":"fb3ce4ca-70bf-4eff-9fe4-96c13228f360"},{"Name":"caseId","SourceName":"caseId","SourceDataType":0,"ImportType":0,"FinanceImportType":0,"Conversion":null,"Level":1,"CaseLevelAttributeHandling":1,"IsDisplayAttribute":false,"IsIncrementalTimeStamp":false,"IsExcluded":false,"DefaultValue":"","VersionAreaId":"fb3ce4ca-70bf-4eff-9fe4-96c13228f360"},{"Name":"actionStatus","SourceName":"actionStatus","SourceDataType":0,"ImportType":6,"FinanceImportType":0,"Conversion":null,"Level":0,"CaseLevelAttributeHandling":1,"IsDisplayAttribute":false,"IsIncrementalTimeStamp":false,"IsExcluded":false,"DefaultValue":"","VersionAreaId":"fb3ce4ca-70bf-4eff-9fe4-96c13228f360"},{"Name":"actionStatusCode","SourceName":"actionStatusCode","SourceDataType":0,"ImportType":6,"FinanceImportType":0,"Conversion":null,"Level":0,"CaseLevelAttributeHandling":1,"IsDisplayAttribute":false,"IsIncrementalTimeStamp":false,"IsExcluded":false,"DefaultValue":"","VersionAreaId":"fb3ce4ca-70bf-4eff-9fe4-96c13228f360"},{"Name":"actionError","SourceName":"actionError","SourceDataType":0,"ImportType":6,"FinanceImportType":0,"Conversion":null,"Level":0,"CaseLevelAttributeHandling":1,"IsDisplayAttribute":false,"IsIncrementalTimeStamp":false,"IsExcluded":false,"DefaultValue":"","VersionAreaId":"fb3ce4ca-70bf-4eff-9fe4-96c13228f360"},{"Name":"actionId","SourceName":"actionId","SourceDataType":0,"ImportType":6,"FinanceImportType":0,"Conversion":null,"Level":0,"CaseLevelAttributeHandling":1,"IsDisplayAttribute":false,"IsIncrementalTimeStamp":false,"IsExcluded":false,"DefaultValue":"","VersionAreaId":"fb3ce4ca-70bf-4eff-9fe4-96c13228f360"},{"Name":"connectorId","SourceName":"connectorId","SourceDataType":0,"ImportType":6,"FinanceImportType":0,"Conversion":null,"Level":0,"CaseLevelAttributeHandling":1,"IsDisplayAttribute":false,"IsIncrementalTimeStamp":false,"IsExcluded":false,"DefaultValue":"","VersionAreaId":"fb3ce4ca-70bf-4eff-9fe4-96c13228f360"},{"Name":"flowVersionId","SourceName":"flowVersionId","SourceDataType":0,"ImportType":6,"FinanceImportType":0,"Conversion":null,"Level":1,"CaseLevelAttributeHandling":1,"IsDisplayAttribute":false,"IsIncrementalTimeStamp":false,"IsExcluded":false,"DefaultValue":"","VersionAreaId":"fb3ce4ca-70bf-4eff-9fe4-96c13228f360"},{"Name":"StartTimestamp.millisecondsEpoch","SourceName":"startTimestamp.millisecondsEpoch","SourceDataType":0,"ImportType":2,"FinanceImportType":0,"Conversion":{"Format":{"DataType":1,"Format":32,"CustomFormat":null,"NumberDecimalSeparator":null,"NumberGroupSeparator":null,"NumberCurrencySymbol":null},"CultureLCID":1033},"Level":0,"CaseLevelAttributeHandling":1,"IsDisplayAttribute":false,"IsIncrementalTimeStamp":false,"IsExcluded":false,"DefaultValue":"01/01/0001 00:00:00","VersionAreaId":"fb3ce4ca-70bf-4eff-9fe4-96c13228f360"}]}</msdyn_configuration>
+      <msdyn_pminferredtaskid>
+        <msdyn_pminferredtaskid>d02d00e2-ccff-ef11-bae2-6045bd00ab22</msdyn_pminferredtaskid>
+      </msdyn_pminferredtaskid>
+      <msdyn_version>1</msdyn_version>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </msdyn_pmprocessversion>
+  </msdyn_pmprocessversions>
+  <msdyn_pmviews>
+    <msdyn_pmview msdyn_pmviewid="71b4e85d-6901-474b-8f44-47e6d4149835">
+      <iscustomizable>1</iscustomizable>
+      <msdyn_configuration>{"Version":0,"FilterGroups":[],"ActiveFilterGroupIndex":-1,"MapLayoutConfiguration":{"Type":0,"SocialLayoutType":0,"ProcessAttributeIndex":0,"SocialAttributeIndex":-1,"IsHierarchyClusteringSelected":false,"ProcessClusteringAttributeIndex":null,"SocialClusteringAttributeIndex":null,"ShowStartEndNodesInProcessLayout":true,"ShowStartEndNodesInSocialLayout":false,"SnapToBackbone":false,"LeftToRight":false,"NodeSpacing":0.25,"RankSpacing":0.5,"CircoDistance":1,"FdpDistance":0.1,"HighlightConnectedItems":true,"ProcessCollapsedClustersV2":null,"SocialCollapsedClustersV2":null,"HierarchyLayouts":null,"SelectedHierarchies":null},"MapPanelsConfiguration":{"DetailsPanelValuesCount":5,"VariantSortParameters":{"SortDirection":1,"CustomColumnProperty":0,"SortBy":0,"PerformanceStatistics":0,"PerformanceStatisticValue":0,"FinanceAttributeIndex":0,"FinanceStatisticValue":0},"VariantsPanelSelectedVariantIdsV2":null,"IsDetailsPanelTopKAttributesListEmptySocialLayout":false,"DetailsPanelTopKAttributesSocialLayout":[],"IsDetailsPanelTopKAttributesListEmptyProcessMap":false,"DetailsPanelTopKTransitionAttributes":[],"IsDetailsPanelTopKTransitionAttributesListEmpty":false,"DetailsPanelTopKAttributesProcessMap":[],"AnimationPanelIsAdvancedOptionsExpanded":true,"DetailsPanelIsFrequencyExpanded":true,"DetailsPanelIsFinanceExpanded":true,"DetailsPanelIsPerformanceExpanded":true,"DetailsPanelIsReworkExpanded":true,"DetailsPanelIsCustomExpanded":true,"DetailsPanelIsBusinessRuleExpanded":true,"DetailsPanelIsTopAttributesExpanded":true,"VisualizePanelIsZoomExpanded":true,"VisualizePanelIsMapPreviewExpanded":true,"VisualizePanelIsSpacingExpanded":true,"DetailsAdvancedPanelTopKNodeAttribute":null,"DetailsAdvancedPanelTopKTransitionAttribute":null,"DetailsAdvancedPanelValuesCount":5,"DetailsAdvancedPanelItemType":0,"DetailsPanelFinanceAttributeStatisticsIndices":[],"DetailsPanelFavoritesAttributesTabIsSelected":false,"FavoritesAttributesConfiguration":{"Frequency":[],"Performance":[],"Rework":[],"Finance":[]},"DetailsPanelNodeCustomStatistics":[],"DetailsPanelTransitionCustomStatistics":[],"DetailsPanelNodeBusinessRuleStatistics":[],"DetailsPanelTransitionBusinessRuleStatistics":[],"DetailsPanelSortDirection":0},"FilterLayoutConfiguration":{"ChartLevel":100,"TimeframeFilterShowCaseActive":true,"TimeframeFilterShowCaseStarted":false,"TimeframeFilterShowCaseEnded":false,"TilePanelsConfiguration":[{"Position":0,"ContentState":0,"PanelType":0},{"Position":1,"ContentState":0,"PanelType":1}]},"SliderConfiguration":{"NodeSliderValue":0,"PathSliderValue":0,"AutoSliderSetting":true},"MapContextConfiguration":{"Type":0,"FrequencyType":{"Type":0,"Level":0},"PerformanceType":{"Type":0,"Level":0},"ReworkType":{"Node":{"Type":0,"Level":0},"Edge":{"Type":0,"Level":0},"IsLinked":true},"FinanceType":{"Type":0,"Level":0},"FinanceAttribute":null,"NodeCustomMetricId":null,"EdgeCustomMetricId":null,"IsCustomContextTypeLinked":true,"BusinessRuleGroupingCategory":null,"NodeBusinessRuleId":null,"EdgeBusinessRuleId":null,"IsBusinessRuleContextTypeLinked":true,"IsBusinessRuleNodeCountDisplayed":false,"IsBusinessRuleEdgeCountDisplayed":false,"FrequencyEdgeVisibility":{"Start":0,"End":100},"PerformanceEdgeVisibility":{"Start":0,"End":100},"ReworkEdgeVisibility":{"Start":0,"End":100},"FinanceEdgeVisibility":{"Start":0,"End":100},"CustomEdgeVisibility":{"Start":0,"End":100},"BusinessRuleEdgeVisibility":{"Start":0,"End":100}},"AnimationConfiguration":{"AnimationSpeed":0.8,"SimulationSpeed":1,"SimulationType":2,"UseLocalActiveMaximum":false,"HighlightActiveEdges":false,"CurrentPosition":0},"PanelConfiguration":{"Width":null,"SelectedPanelItemType":1,"VisibleAdvancedPanels":[],"PanelWidth":null,"AdvancedPanelWidth":null},"MapState":{"VisibleArea":{"X":0,"Y":0,"Width":1,"Height":1},"SelectedItem":null,"FullTextFilter":null},"ProcessExplorerViewType":0,"VariantsConfiguration":{"MiningAttributeIndex":-1,"FinanceAttribute":null,"ProcessMapFinanceContext":1,"ProcessMapPerformanceContext":1,"VariantDetailedStatisticType":0,"VariantViewType":0,"SelectedCaseIndex":null,"SelectedVariantIdV2":null,"VariantSortParameters":{"SortDirection":1,"CustomColumnProperty":0,"SortBy":0,"PerformanceStatistics":0,"PerformanceStatisticValue":0,"FinanceAttributeIndex":0,"FinanceStatisticValue":0},"CaseSearchText":null,"TilePanelsConfiguration":[{"Position":0,"ContentState":0,"PanelType":0},{"Position":1,"ContentState":0,"PanelType":1}]},"StatisticsConfiguration":{"StatisticsChartTypeAttributeIndex":null,"StatisticsViewType":0,"EdgeStatisticsAttributeIndex":0,"Chart":{"TypeDiscriminator":"CaseOverview","CaseOverviewChart":3,"CaseOverviewFinanceAttributeIndex":null,"CaseOverviewCalculatedMetricsId":null},"ChartLevel":100,"EventFilter":{"Id":"f5579bc4-c161-4d00-9b8a-dfbe51b0c56e","Index":0,"FilterParameters":null},"IsFilterOpened":false,"BusinessRuleScope":null,"BusinessRuleStatisticsRuleId":null,"CaseInfluenceMetric":{"MetricType":3,"CalculatedMetricId":null,"AttributeIndex":null},"TilePanelsConfiguration":[{"Position":0,"ContentState":0,"PanelType":0},{"Position":1,"ContentState":0,"PanelType":1},{"Position":2,"ContentState":0,"PanelType":2}],"GridsConfiguration":[{"TypeDiscriminator":"CaseOverview","SummaryColumns":[],"Type":0,"Columns":[{"TypeDiscriminator":"Default","Type":0,"ColumnType":0,"IsVisible":true,"OrderIndex":0}],"SortMetadata":{"ColumnOrderIndex":0,"SortDirection":0}}]},"RootCauseAnalysisConfiguration":{"Name":"","Description":"","Metric":{"MetricType":3,"MetricTypeScope":0,"CalculatedMetricId":null,"AttributeIndex":null},"InfluencedByMetrics":[],"IsReadonly":false,"TreeSettings":{"SavedDiagramPositionX":0,"SavedDiagramPositionY":0,"SavedZoomFactor":0,"TreeLayoutType":5},"Root":null,"ExceptionMessage":null,"IsRootDetailShowed":false,"TreeNodesCompressed":"iwCAW10D","HasChangesBeforeAnalysis":false,"AnalysisTabSelected":false,"AnalysisTabEnabled":false,"ProcessDataVersion":null},"MapCompareConfiguration":{"SelectedTopKAttributesSocialLayout":[],"SelectedTopKAttributesProcess":[],"SelectedTopKAttributesTransitionAttributes":[],"IsTopKAttributesListEmptySocialLayout":false,"IsTopKAttributesListEmptyProcess":false,"IsTopKAttributesListEmptyTransitionAttributes":false,"CompareLayersMetadata":[],"CompareLayerModels":[],"IsBothLayerSelected":false,"LayoutType":0,"SelectedLayerId":null,"SelectedItem":null},"Preview":null,"ActivityDisplayFormatConfiguration":{"DisplayFormat":0,"CustomFormat":"%Activity% (%Label%)"},"GeneralConfiguration":{"DecimalPrecision":null,"MaxTimeUnit":null,"TimeFormatPrecision":null,"IsWorkingHours":null,"IsMainMenuExpanded":false}}</msdyn_configuration>
+      <msdyn_isprivate>0</msdyn_isprivate>
+      <msdyn_name>Default</msdyn_name>
+      <msdyn_pmprocessextendedmetadataversionid>
+        <msdyn_pmprocessextendedmetadataversionid>4cea37d8-b114-4c9b-8703-15cdf6160783</msdyn_pmprocessextendedmetadataversionid>
+      </msdyn_pmprocessextendedmetadataversionid>
+      <msdyn_pmprocessversionid>
+        <msdyn_pmprocessversionid>e17d9d54-c01c-4af9-bac6-bbe8885e2e0f</msdyn_pmprocessversionid>
+      </msdyn_pmprocessversionid>
+      <msdyn_type>1</msdyn_type>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </msdyn_pmview>
+  </msdyn_pmviews>
+  <Languages>
+    <Language>3082</Language>
+  </Languages>
+</ImportExportXml>

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.25023.200" SolutionPackageVersion="9.2" languagecode="3082" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25023.200" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25024.00216">
+  <SolutionManifest>
+    <UniqueName>Work_progress_tracker_p48fx</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="081bf5f3-48bd-415a-91f5-fd0e80f20d06 - Work tracker" languagecode="3082" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.1</Version>
+    <Managed>1</Managed>
+    <Publisher>
+      <UniqueName>Cr837da</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="CDS Default Publisher" languagecode="3082" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>cr49f</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>15489</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode xsi:nil="true"></AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode xsi:nil="true"></ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode xsi:nil="true"></AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode xsi:nil="true"></ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="29" id="{69ed82be-09d7-4fb2-8494-20b5c0fac361}" behavior="0" />
+      <RootComponent type="80" schemaName="msdyn_SolutionHealthHub" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_analysiscomponent" displayName="Componente de análisis" solution="msdyn_PowerAppsChecker (2.0.0.11)">
+          <package appName="PowerAppsChecker" version="2.0.0.11">msdyn_PowerAppsCheckerAnchor (2.0.0.11)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_SolutionHealthHub" displayName="Centro de estado de la solución" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_analysisjob" displayName="Trabajo de análisis" solution="msdyn_PowerAppsChecker (2.0.0.11)">
+          <package appName="PowerAppsChecker" version="2.0.0.11">msdyn_PowerAppsCheckerAnchor (2.0.0.11)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_SolutionHealthHub" displayName="Centro de estado de la solución" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_analysisoverride" displayName="Reemplazo de análisis" solution="msdyn_PowerAppsChecker (2.0.0.11)">
+          <package appName="PowerAppsChecker" version="2.0.0.11">msdyn_PowerAppsCheckerAnchor (2.0.0.11)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_SolutionHealthHub" displayName="Centro de estado de la solución" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_analysisresult" displayName="Resultado de análisis" solution="msdyn_PowerAppsChecker (2.0.0.11)">
+          <package appName="PowerAppsChecker" version="2.0.0.11">msdyn_PowerAppsCheckerAnchor (2.0.0.11)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_SolutionHealthHub" displayName="Centro de estado de la solución" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_solutionhealthrule" displayName="Regla de estado de la solución" solution="msdyn_PowerAppsChecker (2.0.0.11)">
+          <package appName="PowerAppsChecker" version="2.0.0.11">msdyn_PowerAppsCheckerAnchor (2.0.0.11)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_SolutionHealthHub" displayName="Centro de estado de la solución" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_solutionhealthruleargument" displayName="Argumento de regla de estado de la solución" solution="msdyn_PowerAppsChecker (2.0.0.11)">
+          <package appName="PowerAppsChecker" version="2.0.0.11">msdyn_PowerAppsCheckerAnchor (2.0.0.11)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_SolutionHealthHub" displayName="Centro de estado de la solución" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_solutionhealthruleset" displayName="Conjunto de reglas de estado de la solución" solution="msdyn_PowerAppsChecker (2.0.0.11)">
+          <package appName="PowerAppsChecker" version="2.0.0.11">msdyn_PowerAppsCheckerAnchor (2.0.0.11)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_SolutionHealthHub" displayName="Centro de estado de la solución" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_KACopilotDisclaimer" displayName="msdyn_KACopilotDisclaimer" solution="msdynce_KnowledgeManagementHarvestingSolution (9.0.24092.5007)">
+          <package appName="msdynce_KnowledgeManagement" version="9.0.24092.5007">msdynce_KnowledgeManagementAnchor (9.0.24092.5007)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_SolutionHealthHub" displayName="Centro de estado de la solución" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_solutioncheckerlogo32x32" displayName="msdyn_solutioncheckerlogo32x32" solution="msdyn_PowerAppsChecker (2.0.0.11)">
+          <package appName="PowerAppsChecker" version="2.0.0.11">msdyn_PowerAppsCheckerAnchor (2.0.0.11)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_SolutionHealthHub" displayName="Centro de estado de la solución" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="62" schemaName="msdyn_SolutionHealthHub" solution="msdyn_PowerAppsChecker (2.0.0.11)">
+          <package appName="PowerAppsChecker" version="2.0.0.11">msdyn_PowerAppsCheckerAnchor (2.0.0.11)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_SolutionHealthHub" displayName="Centro de estado de la solución" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="80" schemaName="msdyn_SolutionHealthHub" displayName="Centro de estado de la solución" solution="msdyn_PowerAppsChecker (2.0.0.11)">
+          <package appName="PowerAppsChecker" version="2.0.0.11">msdyn_PowerAppsCheckerAnchor (2.0.0.11)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_SolutionHealthHub" displayName="Centro de estado de la solución" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="connectionreference" displayName="new_sharedoffice365_afacf" solution="Active" id.connectionreferencelogicalname="new_sharedoffice365_afacf" />
+        <Dependent type="29" displayName="081bf5f3-48bd-415a-91f5-fd0e80f20d06 - Recordatorio de fecha de vencimiento" id="{69ed82be-09d7-4fb2-8494-20b5c0fac361}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="msdyn_pminferredtask" solution="Active" id="{d56e229f-aeeb-ef11-9342-000d3a331c49}" />
+        <Dependent type="msdyn_pmprocessusersettings" id="{d86e229f-aeeb-ef11-9342-000d3a331c49}" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

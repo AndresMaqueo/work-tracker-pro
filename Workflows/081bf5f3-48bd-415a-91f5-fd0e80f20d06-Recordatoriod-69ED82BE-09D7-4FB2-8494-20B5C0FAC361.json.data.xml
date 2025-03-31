@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{69ed82be-09d7-4fb2-8494-20b5c0fac361}" Name="081bf5f3-48bd-415a-91f5-fd0e80f20d06 - Recordatorio de fecha de vencimiento" Description="3 días antes de que vence un elemento, este flujo de Power Automate enviará un aviso al propietario del elemento." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <JsonFileName>/Workflows/081bf5f3-48bd-415a-91f5-fd0e80f20d06-Recordatoriod-69ED82BE-09D7-4FB2-8494-20B5C0FAC361.json</JsonFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>5</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <PrimaryEntity>none</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="3082" description="081bf5f3-48bd-415a-91f5-fd0e80f20d06 - Recordatorio de fecha de vencimiento" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="3082" description="3 días antes de que vence un elemento, este flujo de Power Automate enviará un aviso al propietario del elemento." />
+  </Descriptions>
+</Workflow>
